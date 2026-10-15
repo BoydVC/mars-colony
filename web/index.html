@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mars Colony Sim</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand"><canvas id="logo" width="40" height="40"></canvas><div><b>MARS COLONY SIM</b><small id="diff-label">Commander</small></div></div>
+    <div class="solbox"><span class="lbl">SOL</span><span id="sol" class="mono">1</span><div class="daybar"><i id="dayfill"></i></div></div>
+    <div class="goalbox"><div class="goal-top"><span>Colonists</span><b id="goal-crew" class="mono">6</b><span class="dim">/ 50</span></div><div class="bar"><i id="goal-fill"></i></div></div>
+    <div id="window-chip" class="chip">Next launch window: Sol 20</div>
+    <div class="spacer"></div>
+    <div class="speed" role="group" aria-label="Game speed">
+      <button data-speed="0" title="Pause (Space)" id="btn-pause"></button>
+      <button data-speed="1" title="Normal speed (1)"></button>
+      <button data-speed="2" title="Fast (2)"></button>
+      <button data-speed="3" title="Fastest (3)"></button>
+      <button id="btn-step" title="Advance one sol (N)" class="txt">+1 sol</button>
+    </div>
+    <button id="btn-auto" class="toggle" title="Let Mission Control's autopilot run the colony (A)">Autopilot</button>
+    <button id="btn-help" class="icon" title="How to play (?)">?</button>
+    <button id="btn-mute" class="icon" title="Sound on/off (M)"></button>
+    <button id="btn-menu" class="icon" title="Menu">&#9776;</button>
+  </header>
+
+  <aside id="left" class="panel">
+    <h3>Life Support</h3>
+    <div id="res"></div>
+    <h3>Crew</h3>
+    <div id="crew"></div>
+    <h3>Mission Control</h3>
+    <ul id="tips"></ul>
+  </aside>
+
+  <main id="stage">
+    <canvas id="map"></canvas>
+    <div id="hover-tip" class="hidden"></div>
+    <div id="toasts"></div>
+    <div id="buildbar" class="hidden"><span id="buildbar-text"></span><button id="buildbar-cancel">Cancel (Esc)</button></div>
+  </main>
+
+  <aside id="right" class="panel">
+    <h3>Build <span class="dim small">click, then pick a tile</span></h3>
+    <div id="build"></div>
+    <div id="inspector" class="hidden"></div>
+    <h3>Colony Log</h3>
+    <ol id="log"></ol>
+  </aside>
+
+  <footer id="timeline"><canvas id="tl"></canvas></footer>
+</div>
+
+<div id="overlay" class="hidden"><div id="modal"></div></div>
+
+<div id="title" class="screen">
+  <div class="title-card">
+    <canvas id="title-logo" width="120" height="120"></canvas>
+    <h1>MARS COLONY SIM</h1>
+    <p class="tag">Keep the air flowing, the potatoes growing and the crew smiling until Starships bring your colony to <b>50 people</b>.</p>
+    <div id="diff-cards"></div>
+    <div class="title-actions">
+      <button id="btn-continue" class="btn ghost hidden">Continue colony</button>
+      <button id="btn-howto" class="btn ghost">How to play</button>
+    </div>
+    <p class="fine">A game for the Boyd crew. All numbers are game numbers. Works offline.</p>
+  </div>
+</div>
+
+<script src="engine.js"></script>
+<script src="render.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

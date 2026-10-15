@@ -1,0 +1,273 @@
+{
+  "seeds": 100,
+  "maxSol": 900,
+  "rows": [
+    {
+      "strategy": "idle",
+      "label": "Idle (never touches anything)",
+      "diff": "cadet",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 124,
+      "avgDeaths": 19.4,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 97,
+        "morale collapse": 3
+      }
+    },
+    {
+      "strategy": "idle",
+      "label": "Idle (never touches anything)",
+      "diff": "commander",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 63,
+      "avgDeaths": 12.1,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 96,
+        "morale collapse": 4
+      }
+    },
+    {
+      "strategy": "idle",
+      "label": "Idle (never touches anything)",
+      "diff": "hardcore",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 61,
+      "avgDeaths": 8.6,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 100
+      }
+    },
+    {
+      "strategy": "rush",
+      "label": "Colonist rush (habs + pads, all-colonist ships)",
+      "diff": "cadet",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 148,
+      "avgDeaths": 39.2,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 99,
+        "morale collapse": 1
+      }
+    },
+    {
+      "strategy": "rush",
+      "label": "Colonist rush (habs + pads, all-colonist ships)",
+      "diff": "commander",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 56,
+      "avgDeaths": 14.3,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 100
+      }
+    },
+    {
+      "strategy": "rush",
+      "label": "Colonist rush (habs + pads, all-colonist ships)",
+      "diff": "hardcore",
+      "seeds": 100,
+      "winRate": 0,
+      "medianWinSol": null,
+      "medianLossSol": 45,
+      "avgDeaths": 11.1,
+      "medals": {
+        "Gold": 0,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {
+        "crew lost": 100
+      }
+    },
+    {
+      "strategy": "rotation",
+      "label": "Novice rotation (builds a fixed cycle, no forecasting)",
+      "diff": "cadet",
+      "seeds": 100,
+      "winRate": 1,
+      "medianWinSol": 192,
+      "medianLossSol": null,
+      "avgDeaths": 0,
+      "medals": {
+        "Gold": 100,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {}
+    },
+    {
+      "strategy": "rotation",
+      "label": "Novice rotation (builds a fixed cycle, no forecasting)",
+      "diff": "commander",
+      "seeds": 100,
+      "winRate": 0.64,
+      "medianWinSol": 244,
+      "medianLossSol": 171,
+      "avgDeaths": 38.3,
+      "medals": {
+        "Gold": 21,
+        "Silver": 32,
+        "Bronze": 11
+      },
+      "lossReasons": {
+        "crew lost": 33,
+        "morale collapse": 3
+      }
+    },
+    {
+      "strategy": "rotation",
+      "label": "Novice rotation (builds a fixed cycle, no forecasting)",
+      "diff": "hardcore",
+      "seeds": 100,
+      "winRate": 0.11,
+      "medianWinSol": 244,
+      "medianLossSol": 174,
+      "avgDeaths": 42.1,
+      "medals": {
+        "Gold": 0,
+        "Silver": 6,
+        "Bronze": 5
+      },
+      "lossReasons": {
+        "crew lost": 83,
+        "morale collapse": 6
+      }
+    },
+    {
+      "strategy": "casual",
+      "label": "Casual (Mission Control logic, checks in every 7 sols)",
+      "diff": "cadet",
+      "seeds": 100,
+      "winRate": 1,
+      "medianWinSol": 197,
+      "medianLossSol": null,
+      "avgDeaths": 0,
+      "medals": {
+        "Gold": 100,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {}
+    },
+    {
+      "strategy": "casual",
+      "label": "Casual (Mission Control logic, checks in every 7 sols)",
+      "diff": "commander",
+      "seeds": 100,
+      "winRate": 1,
+      "medianWinSol": 247,
+      "medianLossSol": null,
+      "avgDeaths": 0.1,
+      "medals": {
+        "Gold": 19,
+        "Silver": 78,
+        "Bronze": 3
+      },
+      "lossReasons": {}
+    },
+    {
+      "strategy": "casual",
+      "label": "Casual (Mission Control logic, checks in every 7 sols)",
+      "diff": "hardcore",
+      "seeds": 100,
+      "winRate": 0.88,
+      "medianWinSol": 296,
+      "medianLossSol": 216,
+      "avgDeaths": 7.1,
+      "medals": {
+        "Gold": 0,
+        "Silver": 41,
+        "Bronze": 47
+      },
+      "lossReasons": {
+        "crew lost": 8,
+        "morale collapse": 4
+      }
+    },
+    {
+      "strategy": "expert",
+      "label": "Mission Control autopilot (acts every sol)",
+      "diff": "cadet",
+      "seeds": 100,
+      "winRate": 1,
+      "medianWinSol": 192,
+      "medianLossSol": null,
+      "avgDeaths": 0,
+      "medals": {
+        "Gold": 100,
+        "Silver": 0,
+        "Bronze": 0
+      },
+      "lossReasons": {}
+    },
+    {
+      "strategy": "expert",
+      "label": "Mission Control autopilot (acts every sol)",
+      "diff": "commander",
+      "seeds": 100,
+      "winRate": 1,
+      "medianWinSol": 192,
+      "medianLossSol": null,
+      "avgDeaths": 0.6,
+      "medals": {
+        "Gold": 63,
+        "Silver": 36,
+        "Bronze": 1
+      },
+      "lossReasons": {}
+    },
+    {
+      "strategy": "expert",
+      "label": "Mission Control autopilot (acts every sol)",
+      "diff": "hardcore",
+      "seeds": 100,
+      "winRate": 0.83,
+      "medianWinSol": 296,
+      "medianLossSol": 218,
+      "avgDeaths": 12.6,
+      "medals": {
+        "Gold": 0,
+        "Silver": 39,
+        "Bronze": 44
+      },
+      "lossReasons": {
+        "morale collapse": 9,
+        "crew lost": 8
+      }
+    }
+  ]
+}
