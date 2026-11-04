@@ -696,7 +696,7 @@
     $('#btn-howto').onclick = openHelp;
     $('#btn-continue').onclick = continueGame;
     const dc = $('#diff-cards');
-    dc.innerHTML = Object.keys(E.DIFFS).map((k) => '<button class="diff' + (k === 'commander' ? ' rec' : '') + '" data-d="' + k + '"><b>' + E.DIFFS[k].label + '</b><span>' + E.DIFFS[k].blurb + '</span><i>' + (k === 'cadet' ? 'GREAT FOR VIC & CHAR' : k === 'commander' ? 'RECOMMENDED' : 'FOR VETERANS') + ' \u2192</i></button>').join('');
+    dc.innerHTML = Object.keys(E.DIFFS).map((k) => '<button class="diff' + (k === 'commander' ? ' rec' : '') + '" data-d="' + k + '"><b>' + E.DIFFS[k].label + '</b><span>' + E.DIFFS[k].blurb + '</span><i>' + (k === 'cadet' ? 'GREAT FOR SAM & ALEX' : k === 'commander' ? 'RECOMMENDED' : 'FOR VETERANS') + ' \u2192</i></button>').join('');
     dc.querySelectorAll('.diff').forEach((b) => b.addEventListener('click', () => { clearSave(); startGame({ difficulty: b.dataset.d }); }));
     window.addEventListener('resize', () => { resize(); });
     window.addEventListener('keydown', (e) => {
