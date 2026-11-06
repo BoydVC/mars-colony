@@ -1,6 +1,6 @@
 # Mars Colony Sim
 
-An offline browser base-builder for the Boyd crew. You run a tiny Mars base: keep six colonists breathing, fed and happy, ride out dust storms, and use Starship launch windows to grow the colony to **50 people**.
+An offline browser base-builder for the Alex crew. You run a tiny Mars base: keep six colonists breathing, fed and happy, ride out dust storms, and use Starship launch windows to grow the colony to **50 people**.
 
 Everything is one HTML file with no network requests, no accounts and no CDN fonts. Progress autosaves in `localStorage`. All numbers are made-up game numbers, not real-world data.
 
@@ -115,6 +115,6 @@ Tuning history: the first pass let Commander lose whole colonies in one global s
 
 ---
 ## Repo notes
-- **Built:** 2026-10-15, by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** 2026-10-15, by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/mars-colony` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.
